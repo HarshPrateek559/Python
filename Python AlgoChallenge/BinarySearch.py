@@ -18,7 +18,7 @@ def binarySearch(arr, x):
 
 arr = [66,4,244,6,9,99,24,7,3,23,677,34,55]
 
-x = 23
+x = int(input("Enter the number that is to be searched: "))
 
 print(binarySearch(arr, x))
 

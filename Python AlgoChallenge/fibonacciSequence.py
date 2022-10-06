@@ -3,9 +3,10 @@ def fibonacci(n):
 	print(0,1,end=" ")
 	for i in range(n):
 		c=a+b
-		print(c,end=" ")
+		if c is not None:
+			print(c,end=" ")
 		a = b
 		b = c
 		
-#print("Fibonacci sequence is:",end = " ")
-print(fibonacci(9))		
+print("Fibonacci sequence is:",end = " ")
+print(fibonacci(8))		
