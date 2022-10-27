@@ -39,6 +39,7 @@ def reading():
 	
 		for lines in content:
 			print(lines,end="")
+	print()
 #after operations you have to close the file
 #	f.close() with block do not require close statement
 	
