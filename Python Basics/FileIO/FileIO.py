@@ -27,14 +27,14 @@ These are the modes in which Python opens a file from the computer
 def writing():
 	n = input("Type what you want to add in the text file\n")
 	print("\n")
-	f = open("text.txt","a")#If i append on a file and then close it then again open the file and read it then the inputted text will be displayed in the same runtime
+	f = open("D:\Software Development\Python\Python Basics\FileIO\\text.txt","a+")#If i append on a file and then close it then again open the file and read it then the inputted text will be displayed in the same runtime
 	f.write("\n"+n)
 	f.close()
 	reading()
 	
 def reading():
 #	f = open("text.txt","r+")to use "b" you have to use "rb" or "wb" or "ab". "r+" and "a+" let user to read and write 
-	with open("text.txt","r+") as f:
+	with open("D:\Software Development\Python\Python Basics\FileIO\\text.txt","r+") as f:
 		content = f.readlines()#read, readline and readlines take int argument which is the number of character they have to read
 	
 		for lines in content:
