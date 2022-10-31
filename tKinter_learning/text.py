@@ -5,6 +5,8 @@ window = Tk()
 
 # This line sets the title of the GUI Application
 window.title("NotePad")
+window.attributes("-fullscreen", True)
+# window.state("zoomed")
 
 # This is the implementation of a button that can close a window.
 button = Button(window, text="Close", command=window.destroy, foreground = "white",  background="red", font=("Times", 20, "bold"))
